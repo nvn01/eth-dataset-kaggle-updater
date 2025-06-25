@@ -64,10 +64,10 @@ The workflow runs automatically every day at midnight UTC. You can also trigger 
 
 The dataset includes the following timeframes:
 
-- `eth_15m_data_2020_to_2025.csv` - 15-minute intervals
-- `eth_1h_data_2020_to_2025.csv` - 1-hour intervals
-- `eth_4h_data_2020_to_2025.csv` - 4-hour intervals
-- `eth_1d_data_2020_to_2025.csv` - Daily intervals
+- `eth_15m_data_2017_to_2025.csv` - 15-minute intervals
+- `eth_1h_data_2017_to_2025.csv` - 1-hour intervals
+- `eth_4h_data_2017_to_2025.csv` - 4-hour intervals
+- `eth_1d_data_2017_to_2025.csv` - Daily intervals
 
 Each file contains:
 

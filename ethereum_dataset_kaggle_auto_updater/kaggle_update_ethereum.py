@@ -155,7 +155,7 @@ def upload_to_kaggle(upload_folder, dataset_slug, version_notes):
             os.environ["HTTPS_PROXY"] = original_https_proxy
 
 def main():
-    dataset_slug = "novandraanugrah/ethereum-historical-datasets-2020-2025"
+    dataset_slug = "novandraanugrah/ethereum-historical-datasets-2017-2025"
     os.makedirs(DATA_FOLDER, exist_ok=True)
     os.makedirs(NEW_DATA_FOLDER, exist_ok=True)
     os.makedirs(MERGED_FOLDER, exist_ok=True)
@@ -184,9 +184,9 @@ def main():
 
     # Step 4: Merge new data with old datasets and save the merged files in MERGED_FOLDER
     for tf_name, _ in timeframes.items():
-        old_file = os.path.join(DATA_FOLDER, f"eth_{tf_name}_data_2020_to_2025.csv")
+        old_file = os.path.join(DATA_FOLDER, f"eth_{tf_name}_data_2017_to_2025.csv")
         new_file = os.path.join(NEW_DATA_FOLDER, f"{tf_name}.csv")
-        merged_file = os.path.join(MERGED_FOLDER, f"eth_{tf_name}_data_2020_to_2025.csv")
+        merged_file = os.path.join(MERGED_FOLDER, f"eth_{tf_name}_data_2017_to_2025.csv")
         merge_datasets(old_file, new_file, merged_file)
     
     # Copy metadata file from DATA_FOLDER to MERGED_FOLDER so that Kaggle API finds it
