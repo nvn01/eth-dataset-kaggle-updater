@@ -155,7 +155,7 @@ def upload_to_kaggle(upload_folder, dataset_slug, version_notes):
             os.environ["HTTPS_PROXY"] = original_https_proxy
 
 def main():
-    dataset_slug = "novandraanugrah/ethereum-historical-datasets-2017-2025"
+    dataset_slug = "novandraanugrah/ethereum-price-data-binance-api-2017now"
     os.makedirs(DATA_FOLDER, exist_ok=True)
     os.makedirs(NEW_DATA_FOLDER, exist_ok=True)
     os.makedirs(MERGED_FOLDER, exist_ok=True)
